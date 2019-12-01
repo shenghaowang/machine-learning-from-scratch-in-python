@@ -1,0 +1,7 @@
+{tropical fruit}
+{yogurt}
+{whole milk}
+{other vegetables}
+{rolls/buns}
+{bottled water}
+{soda}
