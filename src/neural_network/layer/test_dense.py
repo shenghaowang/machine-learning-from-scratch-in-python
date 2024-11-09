@@ -1,8 +1,7 @@
 import numpy as np
 import pytest
-from nnfs.datasets import spiral_data
-
 from neural_networks.layer.dense import Dense
+from nnfs.datasets import spiral_data
 
 
 @pytest.fixture
