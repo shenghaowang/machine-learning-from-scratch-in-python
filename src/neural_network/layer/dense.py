@@ -26,6 +26,6 @@ class Dense:
         Parameters
         ----------
         inputs : np.ndarray
-            inputs array
+            input array
         """
         self.output = np.dot(inputs, self.weights) + self.biases
