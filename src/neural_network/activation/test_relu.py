@@ -17,4 +17,5 @@ def inputs() -> np.ndarray:
 
 def test_forward(relu: ReLU, inputs: np.ndarray):
     relu.forward(inputs)
-    assert np.array_equal(relu.output, np.array([0, 2, 0, 3.3, 0, 1.1, 2.2, 0]))
+    assert relu.output.shape == inputs.shape
+    np.testing.assert_array_equal(relu.output, np.array([0, 2, 0, 3.3, 0, 1.1, 2.2, 0]))
