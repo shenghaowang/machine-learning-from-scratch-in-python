@@ -10,13 +10,7 @@ def matrix_dot_vector(a: List[List[int|float]], b: List[int|float]) -> List[int|
     if len(a[0]) != len(b):
         return -1
 	
-    res = []
-    for row in a:
-        sum = 0
-        for i in range(len(b)):
-            sum += row[i] * b[i]
-        
-        res.append(sum)
+    res = [sum(x * y for x, y in zip(row, b)) for row in a]
     
     return res
 
